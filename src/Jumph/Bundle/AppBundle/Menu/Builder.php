@@ -46,11 +46,10 @@ class Builder extends ContainerAware
      * Create the config menu
      *
      * @param ItemInterface    $menu
-     * @param FactoryInterface $factory
      *
      * @return ItemInterface
      */
-    private function createConfigMenu(ItemInterface $menu, FactoryInterface $factory)
+    private function createConfigMenu(ItemInterface $menu)
     {
         $configMenu = $menu->addChild(
             'Configure',
